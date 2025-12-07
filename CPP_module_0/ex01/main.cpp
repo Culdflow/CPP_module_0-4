@@ -6,7 +6,7 @@
 /*   By: dfeve <dfeve@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:46:11 by dfeve             #+#    #+#             */
-/*   Updated: 2025/07/19 20:28:02 by dfeve            ###   ########.fr       */
+/*   Updated: 2025/12/07 22:43:59 by dfeve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,10 @@ int main()
 			phonebook.PrintContacts();
 		else if (input == "ADD")
 			phonebook.addContact(phonebook.getIndex());
+		else
+		{
+			std::cout << "[ERROR]: Command Doesn't Exist" << std::endl;
+			std::cout << "(EXIT, SEARCH, ADD)" << std::endl;
+		}
 	}
 }

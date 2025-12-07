@@ -6,7 +6,7 @@
 /*   By: dfeve <dfeve@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:22:26 by dfeve             #+#    #+#             */
-/*   Updated: 2025/05/17 20:22:28 by dfeve            ###   ########.fr       */
+/*   Updated: 2025/12/07 22:41:46 by dfeve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ int	main(int argc, char **argv)
 	{
 		PrintCapitalized(argv[x]);
 		x++;
+		if (argv[x])
+			std::cout << " ";
 	}
 	std::cout << std::endl;
 	return 0;
