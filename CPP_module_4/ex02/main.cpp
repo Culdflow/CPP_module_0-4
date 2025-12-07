@@ -4,6 +4,7 @@
 
 int main()
 {
+	//const Animal* animal = new Animal(); //this is an error because Animal is abstract
 	// Exercice example
 	const Animal* dog = new Dog();
 	const Animal* cat = new Cat();
