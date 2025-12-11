@@ -6,7 +6,7 @@
 /*   By: dfeve <dfeve@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:22:10 by dfeve             #+#    #+#             */
-/*   Updated: 2025/07/19 20:44:55 by dfeve            ###   ########.fr       */
+/*   Updated: 2025/12/11 19:28:48 by dfeve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,7 @@ void	PhoneBook::PrintContacts()
 	}
 	if (did_enter == true)
 	{
+		std::cout << "choose an index to get more information" << std::endl;
 		std::getline(std::cin, input);
 		if (input.empty() || input.length() != 1 || !isdigit(input[0]))
 		{
