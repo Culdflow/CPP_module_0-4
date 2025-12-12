@@ -17,7 +17,7 @@ int main(int ac, char **argv)
 	}
 	if (!file_exists(argv[1]))
 	{
-		std::cout << "file doesn't exist" << std::endl;
+		std::cout << "file doesn't exist or isn't able to be read" << std::endl;
 		return 0;
 	}
 	std::string	file_contents;
