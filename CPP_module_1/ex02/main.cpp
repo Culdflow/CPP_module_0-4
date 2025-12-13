@@ -5,14 +5,14 @@
 int main()
 {
 	std::string var = "HI THIS IS BRAIN";
-	std::string	*varP = &var;
-	std::string& Rvar = var;
+	std::string	*stringPTR = &var;
+	std::string& stringREF = var;
 
 	std::cout << &var << std::endl;
-	std::cout << varP << std::endl;
-	std::cout << &Rvar << std::endl;
+	std::cout << stringPTR << std::endl;
+	std::cout << &stringREF << std::endl;
 
 	std::cout << var << std::endl;
-	std::cout << *varP << std::endl;
-	std::cout << Rvar << std::endl;
+	std::cout << *stringPTR << std::endl;
+	std::cout << stringREF << std::endl;
 }

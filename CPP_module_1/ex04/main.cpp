@@ -24,10 +24,10 @@ int main(int ac, char **argv)
 	std::string	buffer;
 	std::string new_f_contents;
 	std::ifstream input(argv[1]);
-	while (input >> buffer)
+	while (std::getline(input, buffer))
 	{
 		file_contents.append(buffer);
-		file_contents.append(" ");
+		file_contents.append("\n");
 	}
 	std::cout << "file contents: " << file_contents << std::endl;
 	input.close();

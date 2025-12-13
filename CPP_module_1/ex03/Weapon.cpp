@@ -15,9 +15,10 @@ Weapon::~Weapon()
 	std::cout << "Destructor called" << std::endl;
 }
 
-const std::string	Weapon::getType()
+const std::string	&Weapon::getType()
 {
-	return (type);
+	std::string &typeREF = type;
+	return (typeREF);
 }
 
 void	Weapon::setType( std::string new_type )
