@@ -8,7 +8,7 @@ class HumanA
 		HumanA( std::string name , Weapon& Weapon );
 		~HumanA();
 		std::string	getWeapon();
-		std::string	getName();
+		std::string	&getName();
 		void		setName( std::string new_name );
 		void		setWeapon( Weapon new_weapon );
 		void		attack();

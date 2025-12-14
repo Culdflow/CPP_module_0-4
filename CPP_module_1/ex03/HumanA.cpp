@@ -10,9 +10,10 @@ HumanA::~HumanA()
 	std::cout << "Destructor called" << std::endl;
 }
 
-std::string HumanA::getName()
+std::string &HumanA::getName()
 {
-	return (name);
+	std::string &result = name;
+	return (result);
 }
 
 std::string HumanA::getWeapon()
